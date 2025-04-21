@@ -1,0 +1,121 @@
+<html>
+<head>
+<title>pom.xml</title>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+<style type="text/css">
+.s0 { color: #bbbbbb;}
+.s1 { color: #d19a66;}
+.s2 { color: #89ca78;}
+.s3 { color: #bbbbbb;}
+.s4 { color: #ef596f;}
+.s5 { color: #5c6370; font-style: italic;}
+</style>
+</head>
+<body bgcolor="#282c34">
+<table CELLSPACING=0 CELLPADDING=5 COLS=1 WIDTH="100%" BGCOLOR="#606060" >
+<tr><td><center>
+<font face="Arial, Helvetica" color="#000000">
+pom.xml</font>
+</center></td></tr></table>
+<pre><span class="s0">&lt;?</span><span class="s1">xml version</span><span class="s2">=&quot;1.0&quot; </span><span class="s1">encoding</span><span class="s2">=&quot;UTF-8&quot;</span><span class="s0">?&gt;</span>
+<span class="s0">&lt;</span><span class="s4">project </span><span class="s1">xmlns</span><span class="s2">=&quot;http://maven.apache.org/POM/4.0.0&quot; </span><span class="s1">xmlns:xsi</span><span class="s2">=&quot;http://www.w3.org/2001/XMLSchema-instance&quot;</span>
+	<span class="s1">xsi:schemaLocation</span><span class="s2">=&quot;http://maven.apache.org/POM/4.0.0 https://maven.apache.org/xsd/maven-4.0.0.xsd&quot;</span><span class="s0">&gt;</span>
+	<span class="s0">&lt;</span><span class="s4">modelVersion</span><span class="s0">&gt;</span><span class="s3">4.0.0</span><span class="s0">&lt;/</span><span class="s4">modelVersion</span><span class="s0">&gt;</span>
+	<span class="s0">&lt;</span><span class="s4">parent</span><span class="s0">&gt;</span>
+		<span class="s0">&lt;</span><span class="s4">groupId</span><span class="s0">&gt;</span><span class="s3">org.springframework.boot</span><span class="s0">&lt;/</span><span class="s4">groupId</span><span class="s0">&gt;</span>
+		<span class="s0">&lt;</span><span class="s4">artifactId</span><span class="s0">&gt;</span><span class="s3">spring-boot-starter-parent</span><span class="s0">&lt;/</span><span class="s4">artifactId</span><span class="s0">&gt;</span>
+		<span class="s0">&lt;</span><span class="s4">version</span><span class="s0">&gt;</span><span class="s3">3.3.5</span><span class="s0">&lt;/</span><span class="s4">version</span><span class="s0">&gt;</span>
+		<span class="s0">&lt;</span><span class="s4">relativePath</span><span class="s0">/&gt; </span><span class="s5">&lt;!-- lookup parent from repository --&gt;</span>
+	<span class="s0">&lt;/</span><span class="s4">parent</span><span class="s0">&gt;</span>
+	<span class="s0">&lt;</span><span class="s4">groupId</span><span class="s0">&gt;</span><span class="s3">br.com.fiap</span><span class="s0">&lt;/</span><span class="s4">groupId</span><span class="s0">&gt;</span>
+	<span class="s0">&lt;</span><span class="s4">artifactId</span><span class="s0">&gt;</span><span class="s3">coleta</span><span class="s0">&lt;/</span><span class="s4">artifactId</span><span class="s0">&gt;</span>
+	<span class="s0">&lt;</span><span class="s4">version</span><span class="s0">&gt;</span><span class="s3">0.0.1-SNAPSHOT</span><span class="s0">&lt;/</span><span class="s4">version</span><span class="s0">&gt;</span>
+	<span class="s0">&lt;</span><span class="s4">name</span><span class="s0">&gt;</span><span class="s3">coleta</span><span class="s0">&lt;/</span><span class="s4">name</span><span class="s0">&gt;</span>
+	<span class="s0">&lt;</span><span class="s4">description</span><span class="s0">&gt;</span><span class="s3">Projeto para coleta de lixo</span><span class="s0">&lt;/</span><span class="s4">description</span><span class="s0">&gt;</span>
+	<span class="s0">&lt;</span><span class="s4">url</span><span class="s0">/&gt;</span>
+	<span class="s0">&lt;</span><span class="s4">licenses</span><span class="s0">&gt;</span>
+		<span class="s0">&lt;</span><span class="s4">license</span><span class="s0">/&gt;</span>
+	<span class="s0">&lt;/</span><span class="s4">licenses</span><span class="s0">&gt;</span>
+	<span class="s0">&lt;</span><span class="s4">developers</span><span class="s0">&gt;</span>
+		<span class="s0">&lt;</span><span class="s4">developer</span><span class="s0">/&gt;</span>
+	<span class="s0">&lt;/</span><span class="s4">developers</span><span class="s0">&gt;</span>
+	<span class="s0">&lt;</span><span class="s4">scm</span><span class="s0">&gt;</span>
+		<span class="s0">&lt;</span><span class="s4">connection</span><span class="s0">/&gt;</span>
+		<span class="s0">&lt;</span><span class="s4">developerConnection</span><span class="s0">/&gt;</span>
+		<span class="s0">&lt;</span><span class="s4">tag</span><span class="s0">/&gt;</span>
+		<span class="s0">&lt;</span><span class="s4">url</span><span class="s0">/&gt;</span>
+	<span class="s0">&lt;/</span><span class="s4">scm</span><span class="s0">&gt;</span>
+	<span class="s0">&lt;</span><span class="s4">properties</span><span class="s0">&gt;</span>
+		<span class="s0">&lt;</span><span class="s4">java.version</span><span class="s0">&gt;</span><span class="s3">17</span><span class="s0">&lt;/</span><span class="s4">java.version</span><span class="s0">&gt;</span>
+	<span class="s0">&lt;/</span><span class="s4">properties</span><span class="s0">&gt;</span>
+	<span class="s0">&lt;</span><span class="s4">dependencies</span><span class="s0">&gt;</span>
+
+		<span class="s0">&lt;</span><span class="s4">dependency</span><span class="s0">&gt;</span>
+			<span class="s0">&lt;</span><span class="s4">groupId</span><span class="s0">&gt;</span><span class="s3">org.springframework.boot</span><span class="s0">&lt;/</span><span class="s4">groupId</span><span class="s0">&gt;</span>
+			<span class="s0">&lt;</span><span class="s4">artifactId</span><span class="s0">&gt;</span><span class="s3">spring-boot-starter-data-jpa</span><span class="s0">&lt;/</span><span class="s4">artifactId</span><span class="s0">&gt;</span>
+		<span class="s0">&lt;/</span><span class="s4">dependency</span><span class="s0">&gt;</span>
+
+		<span class="s0">&lt;</span><span class="s4">dependency</span><span class="s0">&gt;</span>
+			<span class="s0">&lt;</span><span class="s4">groupId</span><span class="s0">&gt;</span><span class="s3">org.springframework.boot</span><span class="s0">&lt;/</span><span class="s4">groupId</span><span class="s0">&gt;</span>
+			<span class="s0">&lt;</span><span class="s4">artifactId</span><span class="s0">&gt;</span><span class="s3">spring-boot-starter-web</span><span class="s0">&lt;/</span><span class="s4">artifactId</span><span class="s0">&gt;</span>
+		<span class="s0">&lt;/</span><span class="s4">dependency</span><span class="s0">&gt;</span>
+
+		<span class="s0">&lt;</span><span class="s4">dependency</span><span class="s0">&gt;</span>
+			<span class="s0">&lt;</span><span class="s4">groupId</span><span class="s0">&gt;</span><span class="s3">org.springframework.boot</span><span class="s0">&lt;/</span><span class="s4">groupId</span><span class="s0">&gt;</span>
+			<span class="s0">&lt;</span><span class="s4">artifactId</span><span class="s0">&gt;</span><span class="s3">spring-boot-starter-security</span><span class="s0">&lt;/</span><span class="s4">artifactId</span><span class="s0">&gt;</span>
+		<span class="s0">&lt;/</span><span class="s4">dependency</span><span class="s0">&gt;</span>
+
+		<span class="s0">&lt;</span><span class="s4">dependency</span><span class="s0">&gt;</span>
+			<span class="s0">&lt;</span><span class="s4">groupId</span><span class="s0">&gt;</span><span class="s3">org.projectlombok</span><span class="s0">&lt;/</span><span class="s4">groupId</span><span class="s0">&gt;</span>
+			<span class="s0">&lt;</span><span class="s4">artifactId</span><span class="s0">&gt;</span><span class="s3">lombok</span><span class="s0">&lt;/</span><span class="s4">artifactId</span><span class="s0">&gt;</span>
+			<span class="s0">&lt;</span><span class="s4">version</span><span class="s0">&gt;</span><span class="s3">1.18.34</span><span class="s0">&lt;/</span><span class="s4">version</span><span class="s0">&gt; </span><span class="s5">&lt;!-- Use the latest version available --&gt;</span>
+			<span class="s0">&lt;</span><span class="s4">scope</span><span class="s0">&gt;</span><span class="s3">provided</span><span class="s0">&lt;/</span><span class="s4">scope</span><span class="s0">&gt;</span>
+		<span class="s0">&lt;/</span><span class="s4">dependency</span><span class="s0">&gt;</span>
+
+		<span class="s0">&lt;</span><span class="s4">dependency</span><span class="s0">&gt;</span>
+			<span class="s0">&lt;</span><span class="s4">groupId</span><span class="s0">&gt;</span><span class="s3">org.springframework.boot</span><span class="s0">&lt;/</span><span class="s4">groupId</span><span class="s0">&gt;</span>
+			<span class="s0">&lt;</span><span class="s4">artifactId</span><span class="s0">&gt;</span><span class="s3">spring-boot-starter-test</span><span class="s0">&lt;/</span><span class="s4">artifactId</span><span class="s0">&gt;</span>
+			<span class="s0">&lt;</span><span class="s4">scope</span><span class="s0">&gt;</span><span class="s3">test</span><span class="s0">&lt;/</span><span class="s4">scope</span><span class="s0">&gt;</span>
+		<span class="s0">&lt;/</span><span class="s4">dependency</span><span class="s0">&gt;</span>
+
+		<span class="s0">&lt;</span><span class="s4">dependency</span><span class="s0">&gt;</span>
+			<span class="s0">&lt;</span><span class="s4">groupId</span><span class="s0">&gt;</span><span class="s3">com.auth0</span><span class="s0">&lt;/</span><span class="s4">groupId</span><span class="s0">&gt;</span>
+			<span class="s0">&lt;</span><span class="s4">artifactId</span><span class="s0">&gt;</span><span class="s3">java-jwt</span><span class="s0">&lt;/</span><span class="s4">artifactId</span><span class="s0">&gt;</span>
+			<span class="s0">&lt;</span><span class="s4">version</span><span class="s0">&gt;</span><span class="s3">4.4.0</span><span class="s0">&lt;/</span><span class="s4">version</span><span class="s0">&gt;</span>
+		<span class="s0">&lt;/</span><span class="s4">dependency</span><span class="s0">&gt;</span>
+
+		<span class="s0">&lt;</span><span class="s4">dependency</span><span class="s0">&gt;</span>
+			<span class="s0">&lt;</span><span class="s4">groupId</span><span class="s0">&gt;</span><span class="s3">org.springframework.boot</span><span class="s0">&lt;/</span><span class="s4">groupId</span><span class="s0">&gt;</span>
+			<span class="s0">&lt;</span><span class="s4">artifactId</span><span class="s0">&gt;</span><span class="s3">spring-boot-starter-validation</span><span class="s0">&lt;/</span><span class="s4">artifactId</span><span class="s0">&gt;</span>
+		<span class="s0">&lt;/</span><span class="s4">dependency</span><span class="s0">&gt;</span>
+
+		<span class="s0">&lt;</span><span class="s4">dependency</span><span class="s0">&gt;</span>
+			<span class="s0">&lt;</span><span class="s4">groupId</span><span class="s0">&gt;</span><span class="s3">org.flywaydb</span><span class="s0">&lt;/</span><span class="s4">groupId</span><span class="s0">&gt;</span>
+			<span class="s0">&lt;</span><span class="s4">artifactId</span><span class="s0">&gt;</span><span class="s3">flyway-core</span><span class="s0">&lt;/</span><span class="s4">artifactId</span><span class="s0">&gt;</span>
+		<span class="s0">&lt;/</span><span class="s4">dependency</span><span class="s0">&gt;</span>
+
+		<span class="s0">&lt;</span><span class="s4">dependency</span><span class="s0">&gt;</span>
+			<span class="s0">&lt;</span><span class="s4">groupId</span><span class="s0">&gt;</span><span class="s3">org.flywaydb</span><span class="s0">&lt;/</span><span class="s4">groupId</span><span class="s0">&gt;</span>
+			<span class="s0">&lt;</span><span class="s4">artifactId</span><span class="s0">&gt;</span><span class="s3">flyway-database-oracle</span><span class="s0">&lt;/</span><span class="s4">artifactId</span><span class="s0">&gt;</span>
+		<span class="s0">&lt;/</span><span class="s4">dependency</span><span class="s0">&gt;</span>
+
+		<span class="s0">&lt;</span><span class="s4">dependency</span><span class="s0">&gt;</span>
+			<span class="s0">&lt;</span><span class="s4">groupId</span><span class="s0">&gt;</span><span class="s3">com.oracle.database.jdbc</span><span class="s0">&lt;/</span><span class="s4">groupId</span><span class="s0">&gt;</span>
+			<span class="s0">&lt;</span><span class="s4">artifactId</span><span class="s0">&gt;</span><span class="s3">ojdbc11</span><span class="s0">&lt;/</span><span class="s4">artifactId</span><span class="s0">&gt;</span>
+		<span class="s0">&lt;/</span><span class="s4">dependency</span><span class="s0">&gt;</span>
+
+	<span class="s0">&lt;/</span><span class="s4">dependencies</span><span class="s0">&gt;</span>
+
+	<span class="s0">&lt;</span><span class="s4">build</span><span class="s0">&gt;</span>
+		<span class="s0">&lt;</span><span class="s4">plugins</span><span class="s0">&gt;</span>
+			<span class="s0">&lt;</span><span class="s4">plugin</span><span class="s0">&gt;</span>
+				<span class="s0">&lt;</span><span class="s4">groupId</span><span class="s0">&gt;</span><span class="s3">org.springframework.boot</span><span class="s0">&lt;/</span><span class="s4">groupId</span><span class="s0">&gt;</span>
+				<span class="s0">&lt;</span><span class="s4">artifactId</span><span class="s0">&gt;</span><span class="s3">spring-boot-maven-plugin</span><span class="s0">&lt;/</span><span class="s4">artifactId</span><span class="s0">&gt;</span>
+			<span class="s0">&lt;/</span><span class="s4">plugin</span><span class="s0">&gt;</span>
+		<span class="s0">&lt;/</span><span class="s4">plugins</span><span class="s0">&gt;</span>
+	<span class="s0">&lt;/</span><span class="s4">build</span><span class="s0">&gt;</span>
+
+<span class="s0">&lt;/</span><span class="s4">project</span><span class="s0">&gt;</span>
+</pre>
+</body>
+</html>

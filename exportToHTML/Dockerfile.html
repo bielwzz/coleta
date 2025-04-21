@@ -1,0 +1,24 @@
+<html>
+<head>
+<title>Dockerfile</title>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+<style type="text/css">
+.s0 { color: #d55fde; font-style: italic;}
+.s1 { color: #bbbbbb;}
+.s2 { color: #89ca78;}
+</style>
+</head>
+<body bgcolor="#282c34">
+<table CELLSPACING=0 CELLPADDING=5 COLS=1 WIDTH="100%" BGCOLOR="#606060" >
+<tr><td><center>
+<font face="Arial, Helvetica" color="#000000">
+Dockerfile</font>
+</center></td></tr></table>
+<pre><span class="s0">FROM </span><span class="s1">eclipse-temurin:21-alpine 
+</span><span class="s0">VOLUME </span><span class="s1">/tmp 
+</span><span class="s0">EXPOSE </span><span class="s1">8080 
+</span><span class="s0">ARG </span><span class="s1">JAR_FILE=target/coleta-0.0.1-SNAPSHOT.jar 
+</span><span class="s0">ADD </span><span class="s1">${JAR_FILE} app.jar 
+</span><span class="s0">ENTRYPOINT </span><span class="s1">[</span><span class="s2">&quot;java&quot;</span><span class="s1">,</span><span class="s2">&quot;-jar&quot;</span><span class="s1">,</span><span class="s2">&quot;/app.jar&quot;</span><span class="s1">]</span></pre>
+</body>
+</html>

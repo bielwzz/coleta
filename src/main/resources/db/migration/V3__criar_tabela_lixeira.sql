@@ -1,0 +1,11 @@
+CREATE SEQUENCE SEQ_LIXEIRA
+    START WITH 1
+    INCREMENT BY 1
+    NOCACHE
+    NOCYCLE;
+CREATE TABLE TBL_LIXEIRA (
+    id_lixeira  NUMBER(5) PRIMARY KEY,
+    localizacao VARCHAR2(20),
+    tipo_coleta VARCHAR2(20),
+    capacidade  NUMBER(10)
+);
